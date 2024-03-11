@@ -1,0 +1,23 @@
+.selectField {
+    display: inline-block;
+    position: relative;
+}
+.pageInput {
+    padding: 5px 10px;
+    width: auto;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, .1);
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.pageInput:hover {
+    background: rgba(0, 0, 0, .2);
+}
+.pageInput:focus {
+    background: #5A5A5A;
+    color: #FFFFFF;
+}

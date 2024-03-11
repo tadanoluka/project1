@@ -1,0 +1,24 @@
+:root {
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
+}
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #FFFFFF;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

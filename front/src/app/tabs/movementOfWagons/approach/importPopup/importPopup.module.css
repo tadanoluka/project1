@@ -1,0 +1,169 @@
+.importBack {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.importPopup {
+    background: #FFFFFF;
+    max-width: 600px;
+    max-height: 600px;
+    z-index: 201;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+
+    display: none;
+    flex: 1 1;
+    gap: 5px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.selectStationBlock {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+;
+}
+
+.title {
+    flex: none;
+    font-weight: 900;
+    font-size: 24px;
+}
+.content {
+    width: 100%;
+    overflow-y: auto;
+    position: relative;
+}
+.dragForm {
+    margin-top: 1vh;
+    flex: 1 1 auto;
+    height: 350px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+.dragFormHidden {
+    display: none;
+}
+.chosenFile {
+    background: #F1F1F1;
+    margin-top: 1vh;
+    padding: 15px 20px 15px 10px;
+    flex: 1 1 auto;
+    width: 100%;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+}
+.fileLoadInfo {
+    gap: 5px;
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+}
+.fileInfoRow {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.fileName {
+    font-size: 14px;
+    font-weight: 500;
+    display: grid;
+    align-items: center;
+}
+.uploadPercent {
+    font-size: 16px;
+    font-weight: 500;
+}
+.fileSize {
+    font-size: 12px;
+    font-weight: 400;
+}
+.progress {
+    height: 13px;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+    background: #FFFFFF;
+}
+.progressBar {
+    height: 100%;
+    background: #0F5294;
+}
+.fileIcon {
+    filter: invert(22%) sepia(60%) saturate(1930%) hue-rotate(191deg) brightness(96%) contrast(93%);
+}
+.btns {
+    margin-top: 1vh;
+    flex: 1 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.btns button{
+    padding: 5px;
+    border: 1px solid #0F5294;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn1 {
+    background: #FFFFFF;
+    color: black;
+}
+.btn2 {
+    background: #0F5294;
+    color: white;
+}
+
+.dropDownContent {
+    display: grid;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 142px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    z-index: 250;
+    top: 25px;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow-y: auto;
+    max-height: 300px;
+    transition: grid-template-rows 0.35s;
+}
+.optionWrapper {
+    overflow: hidden;
+}
+
+.option {
+    margin: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+}
+.option:hover {
+    background: #818181;
+}

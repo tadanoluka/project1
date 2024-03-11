@@ -1,0 +1,71 @@
+.main {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #0F5294;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signInForm {
+    width: 400px;
+    height: 410px;
+    display: flex;
+    flex-flow: column;
+    background: #F1F1F1;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    align-items: center;
+}
+.companyLabel {
+    width: 100%;
+    color: #0F5294;
+    font-weight: 900;
+    font-size: 28px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.greeting {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column;
+    gap: 6px;
+}
+.greeting p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.loginField {
+    margin-top: 40px;
+    flex: none;
+    width: 100%;
+}
+.passwordField {
+    margin-top: 20px;
+    width: 100%;
+    flex: none;
+}
+.signInBtn {
+    border: none;
+    text-align: inherit;
+    font: inherit;
+    appearance: none;
+
+    margin: 40px 0 0;
+    padding: 8px 30px;
+    background: #0F5294;
+    border-radius: 3px;
+    color: #F1F1F1;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.signInBtn:hover {
+    background: #25629E;
+}
+.signInBtn:active {
+    background: #3970A7;
+}

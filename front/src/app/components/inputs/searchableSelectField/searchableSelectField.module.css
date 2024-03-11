@@ -1,0 +1,118 @@
+.fieldset {
+    min-width: 142px;
+    max-width: 300px;
+    border: 1px solid #C5C5C5;
+    border-radius: 3px;
+    position: relative;
+    background: #FFFFFF;
+}
+.highlighted {
+    border: 1px solid red;
+    color: red;
+}
+.fieldset:focus-within {
+    border: 1px solid #0F5294;
+    border-radius: 3px;
+}
+.legend {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 1px;
+    margin-left: 5px;
+
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    margin-top: -7px;
+}
+.textInput {
+    padding-left: 5px;
+    height: 31px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    background: transparent;
+    outline: none;
+}
+.textInput::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #818181;
+}
+.arrowWrapper {
+    height: 31px;
+    width: 31px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-left: 1px solid #C5C5C5;
+}
+.arrow {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    position: relative;
+}
+.arrow span {
+    top: 4px;
+    position: absolute;
+    width: 8px;
+    height: .1rem;
+    background-color: #666666;
+    display: inline-block;
+    transition: all .2s ease;
+}
+.span1 {
+    left: 0;
+    transform: rotate(-45deg);
+}
+.span2 {
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.fieldset:focus-within .span1 {
+    transform: rotate(45deg);
+}
+.fieldset:focus-within .span2 {
+    transform: rotate(-45deg);
+}
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 142px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    top: 25px;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow-y: auto;
+    max-height: 300px;
+    z-index: 250;
+
+    /*grid-template-rows: 0fr;*/
+    /*transition: grid-template-rows 0.35s;*/
+}
+.fieldset:focus-within .dropDownContent {
+    /*grid-template-rows: 1fr;*/
+    display: block;
+}
+.optionWrapper {
+    overflow: hidden;
+}
+.option {
+    margin: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+}
+.option:hover {
+    background: #818181;
+}

@@ -1,0 +1,36 @@
+.header {
+    flex: 0 1 auto;
+    padding: 1.5vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #F1F1F1;
+}
+.tabName {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    height: 2.5rem;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+.navBar {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7vw;
+    background: #F1F1F1;
+}
+.tabContent {
+    flex: 1 1 auto;
+    padding: 3vh 1vw 1vh;
+    background: #FFFFFF;
+    display: flex;
+    flex-flow: column;
+    gap: 6px;
+    overflow: auto;
+}
+.footer {
+    flex: none;
+}

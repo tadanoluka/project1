@@ -1,0 +1,36 @@
+.tableFooter {
+    flex: none;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 13px;
+}
+.tableFooter .leftSide {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 5px;
+}
+.leftSide .text {
+}
+.tableFooter .rightSide {
+    padding-top: 5px;
+    display: flex;
+    flex-flow: row;
+    gap: 1.5vw;
+    align-items: center;
+}
+.rightSide .goToPage {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 5px;
+}
+.rightSide .buttons {
+    display: flex;
+    flex-flow: row;
+    gap: 5px;
+}

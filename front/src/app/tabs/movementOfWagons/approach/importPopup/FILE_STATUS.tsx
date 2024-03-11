@@ -1,0 +1,7 @@
+export enum FILE_STATUS {
+  SELECTED,
+  LOADING,
+  LOADED,
+  SUCCESSFUL,
+  NOT_VALID,
+}

@@ -1,0 +1,47 @@
+.buttonsBlock {
+    color: #0F5294;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.buttonsBlock .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttonsBlock .button:hover {
+    background: rgba(0, 0, 0, .2);
+}
+.buttonsBlock .button:active {
+    background: rgba(0, 0, 0, .4);
+}
+.buttonsBlock .textIcon {
+    color: #FFFFFF;
+    font-size: 7px;
+    font-weight: 500;
+    background: #0F5294;
+    width: 19px;
+    height: 25px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.buttonsBlock .outlinedButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #0F5294;
+    border-radius: 5px;
+    width: 162px;
+    height: 39px;
+    background: #FFFFFF;
+}

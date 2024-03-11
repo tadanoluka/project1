@@ -1,0 +1,27 @@
+.profileBack {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilePopup {
+    background: #F1F1F1;
+    width: 600px;
+    height: 300px;
+    z-index: 201;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 33px 16px rgba(0, 0, 0, 0.1);
+
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}

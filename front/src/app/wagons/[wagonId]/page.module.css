@@ -1,0 +1,56 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+.wagonInfo {
+    background: #ffffff;
+    width: fit-content;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 5px 15px;
+}
+.title {
+    flex: none;
+    font-weight: 900;
+    font-size: 24px;
+}
+.content {
+    margin-top: 2vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.content > div {
+    position: relative;
+}
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+.content > div:hover > .tooltip {
+    visibility: visible;
+}
+.link {
+    color: #0F5294;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.link:hover {
+    color: #116dce;
+}

@@ -1,0 +1,84 @@
+.selectField {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    max-width: fit-content;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .1);
+    font-size: 13px;
+    font-weight: 400;
+}
+.selectFieldLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 8px;
+}
+
+.selectLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+.selectField:hover {
+    background: rgba(0, 0, 0, .2);
+}
+.selectField:focus-within {
+    background: rgba(0, 0, 0, .2);
+}
+.selectField:focus-within .dropUpContent {
+    display: block;
+}
+.arrow {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    position: relative;
+}
+.arrow span {
+    top: 4px;
+    position: absolute;
+    width: 8px;
+    height: .1rem;
+    background-color: #666666;
+    display: inline-block;
+    transition: all .2s ease;
+}
+.span1 {
+    left: 0;
+    transform: rotate(45deg);
+}
+.span2 {
+    right: 0;
+    transform: rotate(-45deg);
+}
+.selectField:focus-within .span1 {
+    transform: rotate(-45deg);
+}
+.selectField:focus-within .span2 {
+    transform: rotate(45deg);
+}
+
+.dropUpContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0 -1px 16px 0 rgba(0,0,0,0.3);
+    border-radius: 3px;
+    z-index: 100;
+    bottom: 100%;
+    width: 100%;
+}
+.option {
+    color: black;
+    padding: 4px 5px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    margin: 5px;
+}
+.option:hover {
+    background: rgba(0, 0, 0, .2);
+}
