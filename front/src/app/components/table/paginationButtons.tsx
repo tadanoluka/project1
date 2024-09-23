@@ -8,7 +8,7 @@ export default function PaginationButtons({
 }: {
   currentPage: number;
   totalPages: number;
-  setPageFunc: (pageIndex: number) => void;
+  setPageFunc: (pageIndex: string) => void;
 }) {
   const pageButtons = () => {
     const startIndex = Math.max(currentPage - 2, 0);
@@ -18,7 +18,7 @@ export default function PaginationButtons({
       buttons.push(
         <button
           key={i}
-          onClick={() => setPageFunc(i)}
+          onClick={() => setPageFunc(i.toLocaleString())}
           className={
             currentPage === i
               ? classNames(styles.active)
@@ -36,18 +36,18 @@ export default function PaginationButtons({
   function prevPage() {
     const newPageIndex = currentPage - 1;
     if (newPageIndex < 0) {
-      setPageFunc(0);
+      setPageFunc('0');
     } else {
-      setPageFunc(newPageIndex);
+      setPageFunc((newPageIndex).toLocaleString());
     }
   }
 
   function nextPage() {
     const newPageIndex = currentPage + 1;
     if (newPageIndex > totalPages - 1) {
-      setPageFunc(totalPages - 1);
+      setPageFunc((totalPages - 1).toLocaleString());
     } else {
-      setPageFunc(newPageIndex);
+      setPageFunc((newPageIndex).toLocaleString());
     }
   }
 
@@ -55,7 +55,7 @@ export default function PaginationButtons({
     <>
       <button
         className={currentPage !== 0 ? styles.button : styles.disabled}
-        onClick={() => setPageFunc(0)}
+        onClick={() => setPageFunc('0')}
         disabled={currentPage === 0}
       >
         {"<<"}
@@ -81,7 +81,7 @@ export default function PaginationButtons({
         className={
           currentPage !== totalPages - 1 ? styles.button : styles.disabled
         }
-        onClick={() => setPageFunc(totalPages - 1)}
+        onClick={() => setPageFunc((totalPages - 1).toLocaleString())}
         disabled={currentPage === totalPages - 1}
       >
         {">>"}

@@ -10,7 +10,7 @@ export default function MiniInputField({
   setFunc,
 }: {
   variable: string;
-  setFunc: (value: string) => string;
+  setFunc: (value: string) => void;
 }) {
   const [value, setValue] = useState<string>(
     (parseInt(variable) + 1).toString(),

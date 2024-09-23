@@ -88,11 +88,11 @@ export default function TableWithFiltersAndPagination({
     setRowsForPage(newSize);
   }
 
-  function changeCurrentPageTo(index: number): void {
+  function changeCurrentPageTo(index: string): void {
     if (metadata) {
-      if (index <= metadata.totalPages - 1 && index >= 0) {
-        setCurrentPage(index);
-      } else if (index >= metadata.totalPages - 1) {
+      if (parseInt(index) <= metadata.totalPages - 1 && parseInt(index) >= 0) {
+        setCurrentPage(parseInt(index));
+      } else if (parseInt(index) >= metadata.totalPages - 1) {
         setCurrentPage(metadata.totalPages - 1);
       } else {
         setCurrentPage(0);

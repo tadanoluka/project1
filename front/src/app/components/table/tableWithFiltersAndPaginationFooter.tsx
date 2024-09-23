@@ -16,7 +16,7 @@ export default function TableWithFiltersAndPaginationFooter({
   rowsForPage: number;
   changeTableSizeForPage: (newSize: number) => void;
   currentPage: number;
-  setCurrentPage: (pageIndex: number) => void;
+  setCurrentPage: (pageIndex: string) => void;
   metadata: IPageableResponseMetadata;
 }) {
   if (!metadata) {
@@ -41,7 +41,7 @@ export default function TableWithFiltersAndPaginationFooter({
         </div>
         <div className={styles.goToPage}>
           <div>Страница</div>
-          <MiniInputField variable={currentPage} setFunc={setCurrentPage} />
+          <MiniInputField variable={currentPage.toLocaleString()} setFunc={setCurrentPage} />
         </div>
         <div className={styles.buttons}>
           <PaginationButtons
